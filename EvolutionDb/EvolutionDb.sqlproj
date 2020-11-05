@@ -58,12 +58,17 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\PostDeployments" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Pedidos.sql" />
     <Build Include="dbo\Tables\Productos.sql" />
     <Build Include="dbo\Tables\Usuarios.sql" />
     <Build Include="dbo\Tables\ApiUsers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
+    <None Include="dbo\PostDeployments\ApiUsers.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="EvolutionDb.refactorlog" />
