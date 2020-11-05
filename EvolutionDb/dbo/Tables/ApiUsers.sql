@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[ApiUsers]
+(
+	[UsuId] INT IDENTITY (1, 1) NOT NULL ,
+	[ApUsuName] CHAR(50) UNIQUE NOT NULL,
+	[ApUsuPass] CHAR(40) NOT NULL,
+	[ApUsuRol] INTEGER NULL,
+)
