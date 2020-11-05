@@ -16,9 +16,9 @@ namespace Api.Controllers
     [ApiController]
     public class ProductosController : ControllerBase
     {
-        private readonly ApiContext _context;
+        private readonly ModelContext _context;
 
-        public ProductosController(ApiContext context)
+        public ProductosController(ModelContext context)
         {
             _context = context;
         }

@@ -16,9 +16,9 @@ namespace Api.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
-        private readonly ApiContext _context;
+        private readonly ModelContext _context;
 
-        public UsuariosController(ApiContext context)
+        public UsuariosController(ModelContext context)
         {
             _context = context;
         }

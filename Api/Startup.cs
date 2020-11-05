@@ -65,6 +65,10 @@ namespace Api
             {
                 options.UseSqlServer(Configuration.GetConnectionString("EvolutionCn"));
             });
+            services.AddDbContext<ModelContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("EvolutionCn"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
