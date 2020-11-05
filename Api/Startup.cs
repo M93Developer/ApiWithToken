@@ -18,6 +18,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Api.Data;
 using Api.Middleware;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api
 {
@@ -60,10 +61,10 @@ namespace Api
                 };
             });
             ///Quitar comentario para usar conexción en configuración
-            //services.AddDbContext<ApiContext>(options =>
-            //{
-            //    options.UseSqlServer(Configuration.GetConnectionString("EvolutionCn"));
-            //});
+            services.AddDbContext<ApiContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("EvolutionCn"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

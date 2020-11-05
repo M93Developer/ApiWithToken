@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Api.Data;
 using Model;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Api.Controllers
